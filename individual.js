@@ -80,7 +80,7 @@ function createBackArrow() {
     backArrow.style.cursor = 'pointer';
 
     var backImg = document.createElement('img');
-    backImg.src = '/images/backarrow.png';
+    backImg.src = 'images/backarrow.png';
     backImg.style.height = "25px";
     backArrow.appendChild(backImg);
 
@@ -158,7 +158,7 @@ function createImgDiv() {
     imgDiv.style.position = 'relative';
     imgDiv.style.display = 'inline-block';
     const shareImage = document.createElement('img');
-    shareImage.src = '/images/share.png';
+    shareImage.src = 'images/share.png';
     shareImage.classList.add('mx-3', 'my-3');
     shareImage.style.opacity = '0.6';
     shareImage.style.cursor = 'pointer';
