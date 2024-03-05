@@ -1,0 +1,67 @@
+body{
+    box-sizing: border-box;
+}
+body.dark-mode{
+    background-color: #202124;
+    color: #fff;
+}
+.dark-mode .card {
+    background-color: #202124; 
+    color: #fff; 
+}
+/* .dark-mode button.chip{
+    background-color: blue;
+    color: white;
+} */
+#spinner-overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000; 
+    z-index: 9999;
+}
+
+.spinner-grow {
+    width: 3rem;
+    height: 3rem;
+}
+img.card-img-top {
+    height: 40% !important;
+    width: 100% !important;
+}
+
+
+#spinner-overlay p {
+    font-size: 1rem;
+    color: #fff; 
+    margin-bottom: 0; 
+}
+
+.navbar-nav .nav-link.active{
+   /* text-decoration: underline; */
+   display: inline-block;
+   border-bottom: 2px solid;
+   padding-bottom: 1px;
+}
+#searchLogo{
+    height: 35px;
+    margin-top: 4px;
+    cursor: pointer;
+    
+}
+.hidden{
+    display: none;
+}
+.logo span img{
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+}
+.logo span:hover img {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
