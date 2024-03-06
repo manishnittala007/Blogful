@@ -46,14 +46,35 @@ body.dark-mode{
     border-bottom: 2px solid;
     padding-bottom: 1px;
  }
- .thin-slider::-webkit-slider-thumb {
-    background-color: #000000;
-}
-
-.thin-slider::-moz-range-thumb {
-    background-color: #000000;
-}
-
+.thin-slider {
+    appearance: none;
+    width: 79%;
+    height: 1px;
+    background-color: #000;
+    outline: none;
+    cursor: pointer;
+    margin: 0 auto;
+  }
+  
+  /* Styling for the slider thumb */
+  .thin-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    background-color: #000;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .thin-slider::-moz-range-thumb {
+    width: 12px;
+    height: 12px;
+    background-color: #000;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
 .hidden{
     display: none;
 }
