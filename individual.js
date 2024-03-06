@@ -159,7 +159,7 @@ function createImgDiv() {
     imgDiv.style.display = 'inline-block';
     const shareImage = document.createElement('img');
     shareImage.src = 'images/share.png';
-    shareImage.classList.add('mx-3', 'my-3');
+    shareImage.classList.add('mx-4', 'my-3');
     shareImage.style.opacity = '0.6';
     shareImage.style.cursor = 'pointer';
     imgDiv.appendChild(shareImage);
@@ -249,24 +249,51 @@ function createItem(text) {
 
     return dropItem;
 }
+function createSpan(size) {
+    var span = document.createElement('span');
+    span.textContent = 'aA';
+    span.style.fontWeight = '450';
+    span.style.fontSize = size;
+    span.classList.add('mx-1');
+    return span;
+}
+
 function createSliderDiv() {
     var sliderDiv = document.createElement('div');
-    
+    sliderDiv.classList.add('mx-3');
+    // Create a div to contain the spans
+    var sizediv = document.createElement('div');
+
+    // Create the spans using the helper function
+    var span1 = createSpan('13px');
+    var span2 = createSpan('15px');
+    var span3 = createSpan('17px');
+    var span4 = createSpan('19px');
+    var span5 = createSpan('21px');
+
+    // Append the spans to the div
+    sizediv.appendChild(span1);
+    sizediv.appendChild(span2);
+    sizediv.appendChild(span3);
+    sizediv.appendChild(span4);
+    sizediv.appendChild(span5);
+
+    // Create the slider input
     var slider = document.createElement('input');
     slider.type = 'range';
     slider.id = 'fontrange';
     slider.min = '1';
-    slider.max = '4';
+    slider.max = '5';
     slider.step = '1';
     slider.value = '1';
-    slider.classList.add('custom-range', 'mx-2', 'mt-3','thin-slider');
+    slider.classList.add('mx-2', 'mt-3', 'thin-slider');
     slider.addEventListener('input', function() {
         var sliderValue = slider.value;
-
-        updateDescriptionTextSize(sliderValue *5);
+        updateDescriptionTextSize(sliderValue * 5);
     });
 
-    
+    // Append the spans div and the slider to the main div
+    sliderDiv.appendChild(sizediv);
     sliderDiv.appendChild(slider);
 
     return sliderDiv;
