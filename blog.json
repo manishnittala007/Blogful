@@ -15,7 +15,7 @@
   },
   {
     "id": 2,
-    "img": "images/tech.jpg",
+    "img": "images/culture.jpg",
     "profileimg": "images/profile.jpg",
     "category": "Culture",
     "author": "Alice Smith",
@@ -29,7 +29,7 @@
   },
   {
     "id": 3,
-    "img": "images/tech.jpg",
+    "img": "images/ideas.jpg",
     "profileimg": "images/profile.jpg",
     "category": "Ideas",
     "author": "Eva Johnson",
@@ -57,7 +57,7 @@
   },
   {
     "id": 5,
-    "img": "images/tech.jpg",
+    "img": "images/culture2.jpg",
     "profileimg": "images/profile.jpg",
     "category": "Culture",
     "author": "Sophia Lee",
